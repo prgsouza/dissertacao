@@ -49,7 +49,7 @@
 	a4paper,			% tamanho do papel. 
 	% -- opções da classe abntex2 --
 	chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
-	section=TITLE,		% títulos de seções convertidos em letras maiúsculas
+	%section=TITLE,		% títulos de seções convertidos em letras maiúsculas
 	%subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
 	%subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
 	% -- opções do pacote babel --
@@ -99,7 +99,7 @@
 \usepackage[section]{placeins}
 \renewcommand{\familydefault}{\sfdefault} % Define sans-serif como padrão
 \usepackage{pgfplots}
-\pgfplotsset{compat=1.18}
+\pgfplotsset{compat=1.16}
 \usepackage{microtype} % melhora hifenização
 \sloppy % evita overfull boxes
 
@@ -201,15 +201,14 @@
 
 \frenchspacing % Retira espaço extra obsoleto entre as frases.
 
-%\imprimircapa
-%\imprimirfolhaderosto*~
+\imprimircapa
+\imprimirfolhaderosto*~
 %\input{others/ficha}
 %\input{others/ata_defesa}
 %\input{others/folha_aprovacao_original}
-%\input{others/dedicatoria}
-%\input{others/agradecimentos}
-%\input{others/epigrafe}
-%\input{others/resumo}
+\input{others/agradecimentos}
+\input{others/epigrafe}
+\input{others/resumo}
 
 
 % ----------------------------------------------------------
@@ -353,7 +352,7 @@
 % ----------------------------------------------------------
 % Apêndices
 % ----------------------------------------------------------
-%\include{appendix}
+\include{appendix}
 % ----------------------------------------------------------
 % Anexos
 % ----------------------------------------------------------
