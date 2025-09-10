@@ -1,9 +1,39 @@
-\section*{\#R8 – Utilizar Metodologias e Ferramentas de Comunicação}
+\section*{\#R8 – Desenvolver colaborativamente Artefatos Digitais}
 
-Um ponto extremamente importante para o bom desenvolvimento do projeto é a comunicação, tanto interna entre a equipe executora do projeto, quanto com a instituição parceira. 
+Segundo o preconizado pela metodologia \textit{Speedplay} de \citeauthor{ferrario2014} (\citeyear{ferrario2014}), os artefatos digitais podem ser utilizados como meio de transformação social, o qual é o foco deste trabalho. 
 
-Diversas ferramentas podem ser utilizadas para comunicação em projetos de extensão. As que se demonstraram efetivas são:
+Existem diversas formas de construção de artefatos digitais em projetos de extensão, e as formas vivenciadas e acertadas, que ocorreram nos projetos do Centro de Informática avaliados por essas recomendações, são as seguintes:
+
 \begin{itemize}
-    \item WhatsApp: comunicação informal e atualizações rápidas. É importante que o WhatsApp, por ser um meio de comunicação mais difundido na sociedade, seja um espaço de utilização tanto pelos estudantes quanto pela organização. Uma boa forma de delimitar isto é por meio de um grupo de WhatsApp com todos os envolvidos no projeto, porém, delimitando que aquele espaço é exclusivamente para tratar de assuntos relacionados ao projeto, para evitar discussões paralelas sem relação com a extensão.
-    \item Discord: utilizado para codificação conjunta, resolução de problemas, agendamento de reuniões, enquetes e videochamadas. É um aplicativo mais específico e de mais conhecimento dos estudantes. Pode ser mais interessante para uso interno da equipe, sem envolver a instituição parceira.
+    \item Programação manual: os estudantes desenvolvem todos os códigos e interfaces dos artefatos digitais. Recomendado para equipes grandes e períodos de execução mais longos.
+    \item Programação via Inteligência Artificial (\textit{vibecoding}): os estudantes desenvolvem códigos e interfaces por meio da inteligência artificial, realizando manualmente correções e adaptações necessárias. Recomendado para equipes menores e períodos de execução mais curtos, permitindo maior foco nas ideias, processos e entendimento da dor da instituição.
+\end{itemize}
+
+Como a forma da realização da programação manual pode se dar de diversas formas, utilizando as mais diversas metodologias e \textit{frameworks} que já estão consolidados e são bastante conhecidos pela literatura científica, este trabalho vai trazer uma nova perspectiva, que está em amplo crescimento, e trazer algumas recomendações básicas de como utilizar exitosamente, o qual é o \textit{vibecoding}.
+
+A forma de programação por meio de Inteligência Artificial tem se mostrado em evidência, em decorrência do crescimento súbito do tema no mercado e na mídia, o que também pode ser um motivador maior para os estudantes, por terem a oportunidade de trabalharem com novas tecnologias que estão cada vez mais em evidência no cotidiano do mercado. 
+
+Ferramentas úteis no Vibecoding:
+\begin{itemize}
+    \item \textbf{ChatGPT}: visando uma melhor assertividade da utilização dos créditos gratuitos disponibilizados pelo V0/Vercel, os estudantes utilizaram o ChatGPT para melhor criação do \textit{prompt} conforme os requisitos levantados em conjunto com a ONG e com a interface que foi prototipada, seja no Wireframe ou no FIGMA, onde o ChatGPT permite a adição de fotos, facilitando na construção do \textit{prompt};
+
+    Exemplo de \textit{prompt} utilizado no projeto CInovação Social: Crie um prompt para o v0 com base nesse projeto (descrição básica do projeto) e nesse protótipo (enviado imagem do protótipo do FIGMA).
+    
+    \item \textbf{V0 - Vercel}: as interfaces (front-end) do projeto CInovação Social e seu banco de dados foi todo gerado via IA através do V0, onde os estudantes, através do \textit{prompt} gerado pelo ChatGPT, gerou o código em React/Next.js com Tailwind, entregando componentes reutilizáveis, e também gerando o \textit{back-end} e o banco de dados completo no Supabase, além de realizar automaticamente a integração destes 3 componentes da plataforma. Em decorrência do V0 ser pago e possuir poucos créditos gratuitos, foi utilizado para gerar o núcleo duro do artefato, onde os estudantes poderão trabalhar em cima do projeto, refinando o mesmo. O tempo economizado durante a construção dos principais componentes necessários para a solução pode ser utilizado para a documentação e melhoria incremental do projeto.
+    
+    \item \textbf{Gemini}: diversos erros foram ocorrendo durante o processo de criação da solução através do V0/Vercel, e para a correção dos erros, seja de interface ou do funcionamento na lógica, cada correção era cobrada a parte pela plataforma, e muitas das vezes as soluções eram incompletas, gerando mais cobranças para novas correções. Em vez de realizar as correções pelo V0/Vercel, os erros e os códigos foram enviados para o Gemini, onde o mesmo realizava a proposta de correção, que era analisada pelos estudantes e era integrada de fato no projeto. Alguns erros se repetiam em diferentes módulos do sistema, e ao corrigir algum caso específico junto ao Gemini, os estudantes conseguiram otimizar o tempo aplicando as mesmas correções em outros módulos, gerando também um aprendizado coletivo sobre padrões de erro e correções no código.
+    
+    \item \textbf{Copilot}: essa ferramenta foi utilizada durante o processo de codificação por parte dos estudantes, onde a correção de erros do V0/Vercel e do Gemini não foi efetiva, e precisava de um olhar mais detalhado pelos estudantes, através da utilização de ferramentas de codificação comuns como o Visual Studio Code, em auxilio do Copilot para correções mais pontuais via IA.
+\end{itemize}
+
+É importante garantir que boas práticas estão sendo adotadas durante o desenvolvimento colaborativo, que muitas vezes pode ser desafiador por envolver estudantes de períodos diferentes, cursos diferentes, e realidades diferentes, além do envolvimento da instituição parceira, que pode ter limitações que dificulte sua participação neste desenvolvimento.
+
+Algumas práticas foram adotadas ao longo das execuções dos projetos analisados:
+\begin{itemize}
+    \item Dias fixos de trabalho: o \textit{Product Owner} do projeto pode definir dias e horários fixos para todos desenvolverem colaborativamente, evitando que o único momento de encontro entre toda a equipe seja no \textit{Sprint Review}. Isso pode auxiliar e estimular a responsabilidade dos participantes e o engajamento dos mesmos. Em casos de projetos que estão sendo executados em períodos de férias, pode se dar uma preferência aos horários já reservados para as aulas, auxiliando assim a organização dos estudantes. Em projetos executados em períodos de aula, podem ser ao fim de semana, respeitando o descanso dos estudantes. Esses encontros podem ser tanto presenciais quanto \textit{online}. O uso da ferramenta Discord no projeto CInovação Social permitiu a otimização destes momentos através dos canais de voz, onde os estudantes poderiam conversar entre si por voz, compartilhar suas telas para mostrarem o que estavam fazendo, além de poderem enviar código via chat, acelerando o processo.
+    
+    \item Delimitação de tarefas: deve se ter uma forte delimitação dos papéis que serão executados pelos estudantes e pelo coordenador do projeto, além dos papéis que serão exercidos pelos colaboradores da instituição parceira. Caso adotada metodologias como o Scrum, devem ser delimitados os papéis básicos como \textit{Product Owner}, \textit{Scrum Master}. Também deve haver o direcionamento e a separação de tarefas da concepção e do desenvolvimento do artefato digital, evitando sobreposição de trabalho e retrabalho entre os estudantes, além de deixar os mesmos mais confortáveis de trabalharem nas áreas que se sentem mais capacitados.
+
+    \item Feedback contínuo: é importante que o coordenador estimule o \textit{feedback} contínuo em relação às tarefas que os estudantes estão executando ao longo do desenrolar do projeto, tanto do coordenador para com os estudantes, dos estudantes para consigo mesmos e dos estudantes para o coordenador, auxiliando na melhoria do projeto não somente em cada nova iteração, mas ao longo da própria execução do mesmo.
+
 \end{itemize}
